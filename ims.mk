@@ -12,15 +12,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ImsService
 
-# IMS Properties
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
-    persist.vendor.vilte_support=0 \
-    persist.vendor.ims_support=1 \
-    persist.vendor.volte_support=1
-
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayIms \
@@ -29,6 +20,13 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
+# Properties
+TARGET_SYSTEM_PROP += \
+    $(IMS_PATH)/configs/properties/system.prop
+
+TARGET_VENDOR_PROP += \
+    $(IMS_PATH)/configs/properties/vendor.prop
 
 # SysConfigs
 PRODUCT_COPY_FILES += \
