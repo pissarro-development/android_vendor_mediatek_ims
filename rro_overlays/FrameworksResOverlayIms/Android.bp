@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "FrameworksResOverlayIms",
+    certificate: "platform",
+    sdk_version: "current"
+}

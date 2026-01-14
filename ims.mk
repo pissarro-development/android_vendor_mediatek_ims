@@ -32,9 +32,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.ims_support=1 \
     persist.vendor.volte_support=1
 
-# MTK IMS Overlays
+# Overlays
 PRODUCT_PACKAGES += \
-    mtk-ims \
+    FrameworksResOverlayIms \
     mtk-ims-telephony
 
 # Permissions

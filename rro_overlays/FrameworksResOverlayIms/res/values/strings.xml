@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
 
     <string name="overlay_name">MTK IMS Config</string>
 
