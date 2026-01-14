@@ -35,7 +35,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayIms \
-    mtk-ims-telephony
+    TelephonyResOverlayIms
 
 # Permissions
 PRODUCT_COPY_FILES += \
