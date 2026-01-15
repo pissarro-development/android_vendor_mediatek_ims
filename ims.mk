@@ -3,7 +3,8 @@
 # SPDX-FileCopyrightText: 2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
-LOCAL_PATH := vendor/mediatek/ims
+
+IMS_PATH := vendor/mediatek/ims
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/mediatek/ims
@@ -19,7 +20,7 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+    $(IMS_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
 # Properties
 TARGET_SYSTEM_PROP += \
